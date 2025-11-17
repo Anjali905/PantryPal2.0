@@ -1,0 +1,3 @@
+interface WelcomeProps {
+  onGo: () => void;
+}
