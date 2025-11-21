@@ -7,7 +7,7 @@ const MobileView = ({ onGo }: WelcomeProps) => (
       <img
         src="/public/images/lucide-Apple-Outlined.svg"
         alt="PantryPal logo"
-        className="w-[160px] h-[160px] bg-[#171A1FFF] rounded-[50px] object-cover p-10"
+        className="w-40 h-40 bg-[#171A1FFF] rounded-[50px] object-cover p-10"
       />
       <h1 className="text-[36px] leading-[45px] font-extrabold text-neutral-900">
         Your Kitchen, Reimagined!

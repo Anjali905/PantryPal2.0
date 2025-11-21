@@ -1,0 +1,69 @@
+{
+  "categories": [
+    {
+      "id": "vegetables",
+      "name": "Vegetables",
+      "items": [
+        { "id": "broccoli", "name": "Broccoli", "image": null },
+        { "id": "carrot", "name": "Carrot", "image": null },
+        { "id": "spinach", "name": "Spinach", "image": null },
+        { "id": "tomato", "name": "Tomato", "image": null },
+        { "id": "onion", "name": "Onion", "image": null },
+        { "id": "potato", "name": "Potato", "image": null }
+      ]
+    },
+    {
+      "id": "fruits",
+      "name": "Fruits",
+      "items": [
+        { "id": "apple", "name": "Apple", "image": null },
+        { "id": "banana", "name": "Banana", "image": null },
+        { "id": "lemon", "name": "Lemon", "image": null },
+        { "id": "orange", "name": "Orange", "image": null }
+      ]
+    },
+    {
+      "id": "dairy-eggs",
+      "name": "Dairy & Eggs",
+      "items": [
+        { "id": "milk", "name": "Milk", "image": null },
+        { "id": "cheese", "name": "Cheese", "image": null },
+        { "id": "yogurt", "name": "Yogurt", "image": null },
+        { "id": "egg", "name": "Egg", "image": null },
+        { "id": "butter", "name": "Butter", "image": null }
+      ]
+    },
+    {
+      "id": "meat-poultry",
+      "name": "Meat & Poultry",
+      "items": [
+        { "id": "chicken", "name": "Chicken", "image": null },
+        { "id": "beef", "name": "Beef", "image": null },
+        { "id": "pork", "name": "Pork", "image": null },
+        { "id": "bacon", "name": "Bacon", "image": null }
+      ]
+    },
+    {
+      "id": "grains-pasta",
+      "name": "Grains & Pasta",
+      "items": [
+        { "id": "rice", "name": "Rice", "image": null },
+        { "id": "pasta", "name": "Pasta", "image": null },
+        { "id": "bread", "name": "Bread", "image": null },
+        { "id": "noodles", "name": "Noodles", "image": null },
+        { "id": "oats", "name": "Oats", "image": null }
+      ]
+    },
+    {
+      "id": "spices-herbs",
+      "name": "Spices & Herbs",
+      "items": [
+        { "id": "salt", "name": "Salt", "image": null },
+        { "id": "pepper", "name": "Pepper", "image": null },
+        { "id": "garlic", "name": "Garlic", "image": null },
+        { "id": "ginger", "name": "Ginger", "image": null },
+        { "id": "oregano", "name": "Oregano", "image": null }
+      ]
+    }
+  ]
+}

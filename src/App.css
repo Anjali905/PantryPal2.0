@@ -3,5 +3,6 @@
 @theme {
   --font-sans: "Nunito Sans";
   --color-orange200: #FA9938FF;
-  --color-grey100:#565D6DFF
+  --color-grey100:#565D6DFF;
+  --color-grey200:#F3F4F6FF
 }

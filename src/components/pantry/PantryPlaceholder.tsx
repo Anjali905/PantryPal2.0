@@ -1,23 +1,27 @@
-// src/components/Pantry/PantryPlaceholder.tsx
-import React from 'react';
+import { useEffect, useState } from "react";
+import FindIngredients from "../FindIngredients";
+import YourPantry from "./YourPantry";
+import RecipeSuggestions from "../recipe/RecipeSuggestions";
 
 export default function PantryPlaceholder() {
+  const [selectedItems, setSelectedItems] = useState<string[]>([]);
+  const [activeView, setActiveView] = useState<ViewMode>("pantry");
+ 
+  const handleSuggestion = ()=>{
+    setActiveView("suggestions")
+  }
+  const handleToggleItem = (itemId: string) => {
+   setSelectedItems((prev)=> prev.includes(itemId)? prev.filter((id)=> id !== itemId):[...prev,itemId]);
+  }
+  useEffect(()=>{
+    console.log("Selected Items:", selectedItems);
+  })
   return (
-    <aside className="bg-white p-6 rounded-2xl shadow-lg">
-      <div className="flex items-center justify-between">
-        <h3 className="text-lg font-semibold">Your Pantry</h3>
-        <div className="text-sm text-gray-500">Select items to get suggestions</div>
-      </div>
-
-      <div className="mt-4 grid grid-cols-2 md:grid-cols-3 gap-3">
-        {/* a few visual chips to show the panel */}
-        {['Egg', 'Rice', 'Onion', 'Tomato', 'Bread', 'Cheese'].map((t) => (
-          <div key={t} className="px-3 py-2 rounded-lg bg-amber-50 text-sm flex items-center justify-between">
-            <span>{t}</span>
-            <button className="ml-2 w-6 h-6 rounded-full bg-amber-300 text-white">+</button>
-          </div>
-        ))}
-      </div>
-    </aside>
+    <div className="flex flex-col md:flex-row justify-center items-stretch gap-6 min-h-screen p-6">
+      {/* Left Panel */}
+      <FindIngredients selectedItems={selectedItems} onItemToggle={handleToggleItem}/>
+      {/* Right Panel */}
+      <>{activeView === "pantry" ? <YourPantry selectedItems={selectedItems} onItemToggle={handleToggleItem} handleSuggestions={handleSuggestion} /> : <RecipeSuggestions />}</>
+    </div>
   );
 }

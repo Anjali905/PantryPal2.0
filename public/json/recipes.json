@@ -1,0 +1,175 @@
+{
+  "recipes": [
+    {
+      "id": "vegetable-stirfry",
+      "name": "Simple Vegetable Stir-fry",
+      "description": "A quick and healthy vegetable stir-fry that's perfect for a light meal",
+      "cookingTime": 15,
+      "difficulty": "easy",
+      "image": null,
+      "requiredIngredients": [
+        { "id": "broccoli", "name": "Broccoli", "quantity": "1 head" },
+        { "id": "carrot", "name": "Carrot", "quantity": "2 medium" },
+        { "id": "onion", "name": "Onion", "quantity": "1 large" },
+        { "id": "garlic", "name": "Garlic", "quantity": "2 cloves" },
+        { "id": "ginger", "name": "Ginger", "quantity": "1 inch" },
+        { "id": "salt", "name": "Salt", "quantity": "1 tsp" },
+        { "id": "pepper", "name": "Pepper", "quantity": "1/2 tsp" }
+      ]
+    },
+    {
+      "id": "chicken-rice-bowl",
+      "name": "Chicken & Rice Bowl",
+      "description": "A complete meal with tender chicken and fluffy rice",
+      "cookingTime": 30,
+      "difficulty": "easy",
+      "image": null,
+      "requiredIngredients": [
+        { "id": "chicken", "name": "Chicken", "quantity": "2 breasts" },
+        { "id": "rice", "name": "Rice", "quantity": "1 cup" },
+        { "id": "onion", "name": "Onion", "quantity": "1 medium" },
+        { "id": "garlic", "name": "Garlic", "quantity": "3 cloves" },
+        { "id": "salt", "name": "Salt", "quantity": "1 tsp" },
+        { "id": "pepper", "name": "Pepper", "quantity": "1/2 tsp" },
+        { "id": "oregano", "name": "Oregano", "quantity": "1 tsp" }
+      ]
+    },
+    {
+      "id": "cheesy-pasta-bake",
+      "name": "Cheesy Pasta Bake",
+      "description": "Comforting pasta baked with creamy cheese sauce",
+      "cookingTime": 35,
+      "difficulty": "medium",
+      "image": null,
+      "requiredIngredients": [
+        { "id": "pasta", "name": "Pasta", "quantity": "250g" },
+        { "id": "cheese", "name": "Cheese", "quantity": "200g grated" },
+        { "id": "milk", "name": "Milk", "quantity": "2 cups" },
+        { "id": "butter", "name": "Butter", "quantity": "3 tbsp" },
+        { "id": "salt", "name": "Salt", "quantity": "1 tsp" },
+        { "id": "pepper", "name": "Pepper", "quantity": "1/2 tsp" },
+        { "id": "garlic", "name": "Garlic", "quantity": "2 cloves" }
+      ]
+    },
+    {
+      "id": "spinach-egg-scramble",
+      "name": "Spinach & Egg Scramble",
+      "description": "Protein-packed breakfast with fresh spinach and eggs",
+      "cookingTime": 10,
+      "difficulty": "easy",
+      "image": null,
+      "requiredIngredients": [
+        { "id": "egg", "name": "Egg", "quantity": "4 large" },
+        { "id": "spinach", "name": "Spinach", "quantity": "2 cups" },
+        { "id": "butter", "name": "Butter", "quantity": "1 tbsp" },
+        { "id": "salt", "name": "Salt", "quantity": "1/2 tsp" },
+        { "id": "pepper", "name": "Pepper", "quantity": "1/4 tsp" },
+        { "id": "cheese", "name": "Cheese", "quantity": "50g grated" }
+      ]
+    },
+    {
+      "id": "beef-potato-stew",
+      "name": "Hearty Beef & Potato Stew",
+      "description": "Warming stew with tender beef and potatoes",
+      "cookingTime": 60,
+      "difficulty": "medium",
+      "image": null,
+      "requiredIngredients": [
+        { "id": "beef", "name": "Beef", "quantity": "500g" },
+        { "id": "potato", "name": "Potato", "quantity": "4 medium" },
+        { "id": "carrot", "name": "Carrot", "quantity": "2 large" },
+        { "id": "onion", "name": "Onion", "quantity": "1 large" },
+        { "id": "garlic", "name": "Garlic", "quantity": "3 cloves" },
+        { "id": "salt", "name": "Salt", "quantity": "1 tsp" },
+        { "id": "pepper", "name": "Pepper", "quantity": "1/2 tsp" },
+        { "id": "oregano", "name": "Oregano", "quantity": "1 tsp" }
+      ]
+    },
+    {
+      "id": "tomato-pasta",
+      "name": "Simple Tomato Pasta",
+      "description": "Classic pasta with fresh tomato sauce",
+      "cookingTime": 20,
+      "difficulty": "easy",
+      "image": null,
+      "requiredIngredients": [
+        { "id": "pasta", "name": "Pasta", "quantity": "200g" },
+        { "id": "tomato", "name": "Tomato", "quantity": "4 ripe" },
+        { "id": "garlic", "name": "Garlic", "quantity": "2 cloves" },
+        { "id": "onion", "name": "Onion", "quantity": "1 small" },
+        { "id": "salt", "name": "Salt", "quantity": "1 tsp" },
+        { "id": "pepper", "name": "Pepper", "quantity": "1/2 tsp" },
+        { "id": "oregano", "name": "Oregano", "quantity": "1 tsp" }
+      ]
+    },
+    {
+      "id": "fruit-yogurt-parfait",
+      "name": "Fruit & Yogurt Parfait",
+      "description": "Healthy layered parfait with fresh fruits and yogurt",
+      "cookingTime": 5,
+      "difficulty": "easy",
+      "image": null,
+      "requiredIngredients": [
+        { "id": "yogurt", "name": "Yogurt", "quantity": "2 cups" },
+        { "id": "banana", "name": "Banana", "quantity": "2 ripe" },
+        { "id": "apple", "name": "Apple", "quantity": "1 medium" },
+        { "id": "orange", "name": "Orange", "quantity": "1 large" },
+        { "id": "lemon", "name": "Lemon", "quantity": "1/2 for juice" }
+      ]
+    },
+    {
+      "id": "bacon-egg-sandwich",
+      "name": "Bacon & Egg Sandwich",
+      "description": "Hearty breakfast sandwich with crispy bacon",
+      "cookingTime": 15,
+      "difficulty": "easy",
+      "image": null,
+      "requiredIngredients": [
+        { "id": "bacon", "name": "Bacon", "quantity": "4 slices" },
+        { "id": "egg", "name": "Egg", "quantity": "2 large" },
+        { "id": "bread", "name": "Bread", "quantity": "2 slices" },
+        { "id": "butter", "name": "Butter", "quantity": "1 tbsp" },
+        { "id": "salt", "name": "Salt", "quantity": "1/4 tsp" },
+        { "id": "pepper", "name": "Pepper", "quantity": "1/4 tsp" }
+      ]
+    },
+    {
+      "id": "vegetable-omelette",
+      "name": "Hearty Vegetable Omelette",
+      "description": "Fluffy omelette packed with fresh vegetables",
+      "cookingTime": 12,
+      "difficulty": "easy",
+      "image": null,
+      "requiredIngredients": [
+        { "id": "egg", "name": "Egg", "quantity": "3 large" },
+        { "id": "spinach", "name": "Spinach", "quantity": "1 cup" },
+        { "id": "tomato", "name": "Tomato", "quantity": "1 medium" },
+        { "id": "onion", "name": "Onion", "quantity": "1/4 cup" },
+        { "id": "cheese", "name": "Cheese", "quantity": "50g grated" },
+        { "id": "salt", "name": "Salt", "quantity": "1/2 tsp" },
+        { "id": "pepper", "name": "Pepper", "quantity": "1/4 tsp" },
+        { "id": "butter", "name": "Butter", "quantity": "1 tbsp" }
+      ]
+    },
+    {
+      "id": "complex-stirfry",
+      "name": "Gourmet Chicken Stir-fry",
+      "description": "Advanced stir-fry with multiple ingredients for experienced cooks",
+      "cookingTime": 40,
+      "difficulty": "hard",
+      "image": null,
+      "requiredIngredients": [
+        { "id": "chicken", "name": "Chicken", "quantity": "300g" },
+        { "id": "broccoli", "name": "Broccoli", "quantity": "1 head" },
+        { "id": "carrot", "name": "Carrot", "quantity": "2 medium" },
+        { "id": "onion", "name": "Onion", "quantity": "1 large" },
+        { "id": "garlic", "name": "Garlic", "quantity": "4 cloves" },
+        { "id": "ginger", "name": "Ginger", "quantity": "2 inch" },
+        { "id": "rice", "name": "Rice", "quantity": "1.5 cups" },
+        { "id": "soy-sauce", "name": "Soy Sauce", "quantity": "3 tbsp" },
+        { "id": "sesame-oil", "name": "Sesame Oil", "quantity": "1 tbsp" },
+        { "id": "chili-flakes", "name": "Chili Flakes", "quantity": "1 tsp" }
+      ]
+    }
+  ]
+}
