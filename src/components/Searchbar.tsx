@@ -1,5 +1,6 @@
 
-const Searchbar = () => {
+const Searchbar = ({searchValue,handleSearchChange}:SearchBarProps) => {
+   
   return (
    <div className="flex flex-col gap-4">
       <div className="flex items-center bg-white border border-gray-200 rounded-lg px-3 py-2 shadow-sm">
@@ -12,9 +13,9 @@ const Searchbar = () => {
         <input
           id="pantry-search"
           type="search"
-          value="searchValue"
-          onChange={()=>{}}
-          placeholder={"Search ingredients..."}
+          value={searchValue}
+          onChange={(e)=>handleSearchChange(e)}
+          placeholder="Search ingredients..."
           className="ml-3 w-full bg-transparent text-sm placeholder-gray-400 focus:outline-none"
           aria-label="Search ingredients"
         />

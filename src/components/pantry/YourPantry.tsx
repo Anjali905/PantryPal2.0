@@ -1,7 +1,8 @@
+import { memo } from "react";
 import { CTAButton } from "../button/CTAButton";
 import ItemTag from "../Tags/ItemTag";
 
-const YourPantry = ({
+const YourPantry = memo(({
   selectedItems,
   onItemToggle,
   handleSuggestions,
@@ -30,6 +31,6 @@ const YourPantry = ({
       <CTAButton onClick={handleSuggestions}>What can i cook?</CTAButton>
     </div>
   );
-};
+});
 
 export default YourPantry;

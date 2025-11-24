@@ -1,7 +1,7 @@
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useMemo } from "react";
 import data from "../../public/json/ingredients.json";
 function useIngredientsHooks() {
-  const [ingredientData] = useState(data);
+  const ingredientData = data;
   const ingredientMap = useMemo(() => {
     const map: { [key: string]: string } = {};
     ingredientData.categories.forEach((category) => {
@@ -15,8 +15,8 @@ function useIngredientsHooks() {
 
   const getIngredientNameByid = useCallback(
     (id: string): string => {
-        console.log("Getting name for ID:", id, "->", ingredientMap[id]);
-      return ingredientMap[id] || id;
+        console
+      return ingredientMap[id] || "Unknown Ingredient";
     },
     [ingredientMap]
   );

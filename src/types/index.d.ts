@@ -46,4 +46,9 @@ interface Recipe {
 interface SelectedItemProps {
   selectedItems: string[];
   onItemToggle: (itemId: string) => void;
+  searchQuery?: string;
+}
+interface SearchBarProps{
+    searchValue: string;
+    handleSearchChange:(e: React.ChangeEvent<HTMLInputElement>)=>void
 }
