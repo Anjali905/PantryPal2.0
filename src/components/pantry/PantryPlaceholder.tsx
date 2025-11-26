@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useState } from "react";
+import { lazy, Suspense, useState } from "react";
 import FindIngredients from "../FindIngredients";
 import YourPantry from "./YourPantry";
 const RecipeSuggestions = lazy(() => import("../recipe/RecipeSuggestions"));
@@ -16,9 +16,7 @@ export default function PantryPlaceholder() {
         : [...prev, itemId]
     );
   };
-  useEffect(() => {
-    console.log("Selected Items:", selectedItems);
-  });
+
   return (
     <div className="flex flex-col md:flex-row justify-center items-stretch gap-6 min-h-screen p-6">
       {/* Left Panel */}

@@ -9,17 +9,17 @@ const HomePage = () => {
   return (
     <div className="max-w-5xl mx-auto p-6 md:p-10">
          <Header/>
-      {/* <div className="mt-12">
+      <div className="mt-12">
         <AnimatePresence>
           {!showPantry && <Welcome onGo={handleGo} />}
         </AnimatePresence>
-      </div> */}
+      </div>
 
       {/* Pantry section mounts when showPantry is true */}
       <div ref={pantryRef} className="mt-8">
         <AnimatePresence>
-          
-            <motion.div
+          {showPantry && (
+  <motion.div
               key="pantry"
               initial={{ opacity: 0, y: 12, scale: 0.995 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -28,6 +28,8 @@ const HomePage = () => {
             >
               <PantryPlaceholder />
             </motion.div>
+          )}
+          
          
         </AnimatePresence>
       </div>

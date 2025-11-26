@@ -8,6 +8,10 @@ interface YourPantryProps{
 }
 type ViewMode = "pantry" | "suggestions";
 
+interface CategoryFilterPanelProps {
+  selectedCategory: any;
+  onCategorySelect: any;
+}
 interface Ingredient {
   id: string;
   name: string;
@@ -47,6 +51,7 @@ interface SelectedItemProps {
   selectedItems: string[];
   onItemToggle: (itemId: string) => void;
   searchQuery?: string;
+  selectedCategory?: string | null;
 }
 interface SearchBarProps{
     searchValue: string;

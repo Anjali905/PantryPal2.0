@@ -4,23 +4,40 @@ import IngredientItem from "./IngredientItem";
 import CategorySection from "./CategorySection";
 
 
-const AccordionDropdown = memo(({selectedItems, onItemToggle, searchQuery}: SelectedItemProps) => {
+const AccordionDropdown = memo(({selectedItems, onItemToggle, searchQuery,selectedCategory}: SelectedItemProps) => {
   const [expandedId, setExpandedId] = useState<string | null>(null);
  
   const filteredCategories = useMemo(()=>{
-    if(!searchQuery) return ingredientData.categories;
-    const query = searchQuery.toLowerCase().trim();
-    return ingredientData.categories.map(category=>({
-        ...category,
-        items:category.items.filter(item=> item.name.toLowerCase().includes(query))
-    }))
-    .filter(category=> category.items.length >0);// Remove categories with no matching items
+    let filtered = ingredientData.categories;
 
-  },[searchQuery]);
+    // Apply search filter
+    if (searchQuery) {
+      const query = searchQuery.toLowerCase().trim();
+      filtered = filtered.map(category => ({
+        ...category,
+        items: category.items.filter(item => 
+          item.name.toLowerCase().includes(query)
+        )
+      })).filter(category => category.items.length > 0);
+    }
+
+    // Apply category filter
+    if (selectedCategory) {
+      filtered = filtered.filter(category => 
+        category.id === selectedCategory
+      );
+    }
+
+    return filtered;
+
+  },[searchQuery,selectedCategory]);
   useEffect(()=>{
    if(searchQuery?.trim() && filteredCategories.length >0){
     setExpandedId(filteredCategories[0].id);
-   }else {
+   }else if(selectedCategory && filteredCategories.length >0){
+    setExpandedId(filteredCategories[0].id);
+   }
+   else {
      setExpandedId(null);
    }
   },[searchQuery, filteredCategories]);
